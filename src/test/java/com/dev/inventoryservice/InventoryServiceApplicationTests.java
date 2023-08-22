@@ -10,4 +10,11 @@ class InventoryServiceApplicationTests {
 	void contextLoads() {
 	}
 
+    @Test
+    void addProduct() {
+    }
+
+    @Test
+    void getInventoryByName() {
+    }
 }

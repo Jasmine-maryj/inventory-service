@@ -1,20 +1,15 @@
-package com.dev.inventoryservice.entity;
+package com.dev.inventoryservice.dto;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
 @Builder
-public class Inventory {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class InventoryResponse {
     private String name;
     private int quantity;
     private boolean isStock;

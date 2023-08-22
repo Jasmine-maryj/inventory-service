@@ -6,4 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface InventoryRepository extends JpaRepository<Inventory, Long> {
+    Inventory findByName(String name);
+
+    Inventory findByNameAndIsStockIsTrue(String name);
 }
